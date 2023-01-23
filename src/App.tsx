@@ -3,19 +3,19 @@ import "./App.css"
 import axios from "axios"
 
 function App() {
-
+  
 
   return (
     <>
       <label>
         Assunto:
-        <input type="text" id=''/>
+        <input type="text" id='' />
       </label>
       <br />
       <label>
         Corpo:
         <textarea />
-      </label><br/>
+      </label><br />
       <button onClick={() => { }}>Enviar</button>
     </>
   )
