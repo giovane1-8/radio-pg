@@ -13,6 +13,8 @@ export const Header = styled.div`
   align-items: center;
 
   padding: 4rem 12.5rem 0;
+
+  font-family: 'Montserrat', sans-serif;
 `
 
 export const Image = styled.img`
@@ -28,7 +30,7 @@ export const NavigationWrapper = styled.ul`
   width: 55%;
 
   list-style: none;
-  font-size: 24px;
+  font-size: 1.25rem;
 `
 
 export const ListItem = styled.a`
@@ -60,7 +62,7 @@ export const Footer = styled.div`
 `
 
 export const Button = styled.button`
-  padding: 10px;
+  padding: 0.625rem;
   border-radius: 80px;
 
   border: 0;
@@ -75,11 +77,12 @@ export const ButtonGlow = styled.button`
   align-items: center;
   gap: 1rem;
   
-  padding: 10px;
-  width: 150px;
+  padding: 0.625rem;
+  width: 9.375rem;
   
   color: #FF4848;
-  font-size: 16px;
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
   font-weight: 700;
   
   border-radius: 80px;
