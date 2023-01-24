@@ -1,24 +1,8 @@
-import { useState } from 'react'
-import "./App.css"
-import axios from "axios"
+import { RouterProvider } from 'react-router-dom'
+import { router } from './routes/router.routes'
 
-function App() {
-
-
+export const App = () => {
   return (
-    <>
-      <label>
-        Assunto:
-        <input type="text" id=''/>
-      </label>
-      <br />
-      <label>
-        Corpo:
-        <textarea />
-      </label><br/>
-      <button onClick={() => { }}>Enviar</button>
-    </>
+    <RouterProvider router={router} />
   )
 }
-
-export default App
