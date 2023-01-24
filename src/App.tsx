@@ -1,15 +1,14 @@
-import { RouterProvider } from 'react-router-dom'
-import { router } from './routes/router.routes'
-
 import GlobalStyle from './styles/global'
 import { ThemeProvider } from 'styled-components'
 import _default from './styles/themes/default'
+
+import { InitialBanner } from './components/InitialBanner'
 
 export const App = () => {
   return (
     <ThemeProvider theme={_default}>
       <GlobalStyle />
-      <RouterProvider router={router} />
+      <InitialBanner />
     </ThemeProvider>
   )
 }
