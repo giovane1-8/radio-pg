@@ -4,6 +4,7 @@ import _default from './styles/themes/default'
 
 import { InitialBanner } from './components/InitialBanner'
 import { Sobre } from './components/Sobre'
+import { PedirUmaMusica } from './components/PedirUmaMusica'
 
 export const App = () => {
   return (
@@ -11,6 +12,7 @@ export const App = () => {
       <GlobalStyle />
       <InitialBanner />
       <Sobre />
+      <PedirUmaMusica />
     </ThemeProvider>
   )
 }

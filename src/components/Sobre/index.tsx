@@ -13,7 +13,6 @@ import {
 
 import gridLeftImage from '../../utils/images/grid-left-image.png'
 import gridRightImage from '../../utils/images/grid-right-image.png'
-import shadow from '../../utils/images/sombra.png'
 
 import radio from '../../utils/icons/radio.svg'
 import star from '../../utils/icons/star.svg'
