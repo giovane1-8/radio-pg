@@ -2,7 +2,8 @@ import styled from 'styled-components'
 
 export const Banner = styled.div`
   height: 90vh;
-  background-color: ${props => props.theme.colors.lightGray};
+  /* background-color: ${props => props.theme.colors.lightGray}; */
+  background-image: url('https://www.juicysantos.com.br/wp-content/uploads/2020/01/Praia-Grande.jpg');
 
   position: relative;
 `
@@ -89,4 +90,10 @@ export const ButtonGlow = styled.button`
   border: 0;
   
   cursor: pointer;
+`
+
+export const VerticalBlur = styled.div`
+  width: inherit;
+  height: 80vh;
+  background: linear-gradient(to top, #fff 10%, transparent 25%);
 `
