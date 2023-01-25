@@ -23,7 +23,7 @@ export const Flex = styled.div`
 // (* TODO: fix the shadow background size *)
 // Upper content
 export const LeftImage = styled.img`
-  margin-right: 40px;
+  margin-right: 2.5rem;
 
   background-image: url(${shadow});
   background-position: center;
@@ -32,17 +32,17 @@ export const LeftImage = styled.img`
 `
 
 export const RightContentContainer = styled.div`
-  margin-left: 40px;
+  margin-left: 2.5rem;
 `
 
 // Down content
 export const LeftContentContainer = styled.div`
   text-align: right;
-  margin-right: 40px;
+  margin-right: 2.5rem;
 `
 
 export const RightImage = styled.img`
-  margin-left: 40px;
+  margin-left: 2.5rem;
 
   background-image: url(${shadow});
   background-position: center;
@@ -58,7 +58,7 @@ export const ShadowImage = styled.img`
 
 export const Title = styled.h1`
   font-family: 'Montserrat';
-  font-size: 38px;
+  font-size: 2.375rem;
   font-weight: 500;
 
   display: flex;
@@ -67,13 +67,13 @@ export const Title = styled.h1`
 
 export const Text = styled.p`
   font-family: 'Inter';
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 400;
 
-  margin-top: 35px;
+  margin-top: 2.1875rem;
 `
 
 export const Icon = styled.img`
-  width: 45px;
-  height: 45px;
+  width: 2.8125rem;
+  height: 2.8125rem;
 `
