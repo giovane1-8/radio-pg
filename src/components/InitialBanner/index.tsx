@@ -9,7 +9,8 @@ import {
   ListItemGlow,
   Footer,
   Button,
-  ButtonGlow
+  ButtonGlow,
+  VerticalBlur
 } from './style'
 
 import logoFundoBranco from '../../utils/images/logoFundoBranco.png'
@@ -19,7 +20,7 @@ import pause from '../../utils/icons/pause.svg'
 import playOne from '../../utils/icons/play-one.svg'
 
 export const InitialBanner = () => {
-  const [inLive, IsInLive] = useState<boolean>(false)
+  const [inLive, IsInLive] = useState<boolean>(true)
 
   return (
     <Banner>
@@ -44,6 +45,8 @@ export const InitialBanner = () => {
         <Button><img src={pause} /></Button>
         <Button><img src={communication} /></Button>
       </Footer>
+
+      {/* <VerticalBlur></VerticalBlur> */}
     </Banner>
   )
 }
