@@ -5,6 +5,7 @@ import _default from './styles/themes/default'
 import { InitialBanner } from './components/InitialBanner'
 import { Sobre } from './components/Sobre'
 import { PedirUmaMusica } from './components/PedirUmaMusica'
+import { FervendoNaPG } from './components/FervendoNaPG'
 
 export const App = () => {
   return (
@@ -13,6 +14,7 @@ export const App = () => {
       <InitialBanner />
       <Sobre />
       <PedirUmaMusica />
+      <FervendoNaPG />
     </ThemeProvider>
   )
 }
