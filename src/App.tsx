@@ -1,24 +1,14 @@
-import { useState } from 'react'
-import "./App.css"
-import axios from "axios"
+import GlobalStyle from './styles/global'
+import { ThemeProvider } from 'styled-components'
+import _default from './styles/themes/default'
 
-function App() {
-  
+import { InitialBanner } from './components/InitialBanner'
 
+export const App = () => {
   return (
-    <>
-      <label>
-        Assunto:
-        <input type="text" id='' />
-      </label>
-      <br />
-      <label>
-        Corpo:
-        <textarea />
-      </label><br />
-      <button onClick={() => { }}>Enviar</button>
-    </>
+    <ThemeProvider theme={_default}>
+      <GlobalStyle />
+      <InitialBanner />
+    </ThemeProvider>
   )
 }
-
-export default App
