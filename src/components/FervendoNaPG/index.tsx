@@ -52,9 +52,9 @@ export const FervendoNaPG = () => {
     <Container>
       <Title>Fervendo na Praia Grande</Title>
       <Grid>
-        {data.map((item) => {
+        {data.map((item, index) => {
           return (
-            <Cell>
+            <Cell key={index}>
               <Background src={item.img} />
               <SubTitle>{item.title}</SubTitle>
             </Cell>  
