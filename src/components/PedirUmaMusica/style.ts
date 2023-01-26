@@ -10,11 +10,22 @@ export const Container = styled.div`
   padding-right: 10vw;
 
   margin-top: 12.5rem;
+
+  // cellphone query
+  @media(max-width: 425px) {
+    padding: 15px;
+
+    flex-direction: column;
+  }
 `
 
 export const Content = styled.div`
   width: 60%;
-  /* background-color: red; */
+
+  // cellphone query
+  @media(max-width: 425px) {
+    width: 100%;
+  }
 `
 
 export const Title = styled.h1`
@@ -24,10 +35,23 @@ export const Title = styled.h1`
 
   display: flex;
   align-items: center;
+
+  // cellphone query
+  @media(max-width: 425px) {
+    font-size: 24px;
+    justify-content: center;
+  }
 `
 
 export const Icon = styled.img`
   width: 5rem;
+  margin-right: 30px;
+
+  // cellphone query
+  @media(max-width: 425px) {
+    width: 28px;
+    margin-right: 15px;
+  }
 `
 
 export const Text = styled.p`
@@ -38,6 +62,14 @@ export const Text = styled.p`
   max-width: 35vw;
 
   margin-top: 4.0625rem;
+
+  // cellphone query
+  @media(max-width: 425px) {
+    max-width: 80%;
+    text-align: center;
+    margin-left: 10%;
+    margin-top: 22px;
+  }
 `
 
 export const Form = styled.form`
@@ -49,6 +81,12 @@ export const Form = styled.form`
   /* background-color: blue; */
 
   font-family: 'Montserrat', sans-serif;
+
+  // cellphone query
+  @media(max-width: 425px) {
+    width: 80%;
+    margin-top: 70px;
+  }
 `
 
 export const Label = styled.label`

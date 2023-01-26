@@ -10,7 +10,7 @@ import {
   Margin
 } from './style'
 
-import music from '../../utils/icons/music.svg'
+import musicIcon from '../../utils/icons/music.svg'
 import { useState } from 'react'
 
 export const PedirUmaMusica = () => {
@@ -25,7 +25,7 @@ export const PedirUmaMusica = () => {
   return (
     <Container>
       <Content>
-        <Title><Icon src={music} style={{ marginRight: 30 }} />E aí, o que quer ouvir?</Title>
+        <Title><Icon src={musicIcon} />E aí, o que quer ouvir?</Title>
         <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu urna nunc. Nulla elementum scelerisque varius. Maecenas tempus suscipit metus, vitae luctus dolor semper et. Nam vulputate volutpat mauris in eleifend. In placerat iaculis sem ut malesuada. Suspendisse potenti. Morbi consequat mi et tortor blandit laoreet. Nam feugiat ullamcorper eros sit amet malesuada. Nam vel metus aliquam, consectetur nisl non, porta augue. Ut sodales elementum libero a faucibus. Mauris pellentesque luctus velit, eget malesuada dolor mollis sed. Sed mattis dui eget lectus ornare, in efficitur tortor vehicula.</Text>
       </Content>
 

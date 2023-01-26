@@ -6,7 +6,7 @@ export const Container = styled.div`
   align-items: center;
   
   min-width: 100%;
-  height: 900px;
+  height: 1075px;
   margin-top: 250px;
   
   position: relative;
@@ -29,10 +29,7 @@ export const Image = styled.img`
 
   // cellphone query
   @media(max-width: 425px) {
-    margin-left: 0;
-    right: 0;
-
-    width: 500px;
+    display: none;
   }
 `
 
@@ -110,5 +107,68 @@ export const Content = styled.p`
     font-size: 14px;
     margin-top: 35px;
     max-width: none;
+  }
+`
+
+// Exclusive mobile contents
+export const ImageMobile = styled.img`
+  display: none;
+
+  // cellphone query
+  @media(max-width: 425px) {
+    display: inherit;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    width: 425px;
+  }
+`
+
+export const Link = styled.a`
+  display: none;
+
+  // cellphone query
+  @media(max-width: 425px) {
+    display: inherit;
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    margin: 0;
+    margin: 50px;
+
+    width: 280px;
+    height: 70px;
+
+    border-radius: 33px;
+    background-color: ${props => props.theme.colors.white};
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    outline: none;
+    
+    color: ${props => props.theme.colors.black};
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+  }
+`
+
+export const Icon = styled.img`
+  display: none;
+
+  // cellphone query
+  @media(max-width: 425px) {
+    display: inherit;
+    width: 35px;
   }
 `
