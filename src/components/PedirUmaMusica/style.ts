@@ -61,7 +61,7 @@ export const Text = styled.p`
 
   max-width: 35vw;
 
-  margin-top: 4.0625rem;
+  margin-top: 2rem;
 
   // cellphone query
   @media(max-width: 425px) {
