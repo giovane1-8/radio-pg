@@ -26,6 +26,11 @@ export const PedirUmaMusica = () => {
           <Input type="text" id='name' placeholder='Seu nome' />
         </Margin>
 
+        <Margin>
+          <Label htmlFor="email">E-mail:</Label>
+          <Input type="text" id='email' placeholder='Seu nome' />
+        </Margin>
+
         <Margin style={{ display: 'flex', gap: 50 }}>
           <div>
             <Label htmlFor="state">Seu estado:</Label>
