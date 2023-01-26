@@ -101,7 +101,7 @@ export const Title = styled.h1`
   font-weight: 500;
 
   display: flex;
-  align-items: center;
+  align-items: center;  
 
   // cellphone query
   @media(max-width: 425px) {

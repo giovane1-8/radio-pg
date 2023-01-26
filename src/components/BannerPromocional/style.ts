@@ -6,7 +6,7 @@ export const Container = styled.div`
   align-items: center;
   
   min-width: 100%;
-  height: 1075px;
+  height: 660px;
   margin-top: 250px;
   
   position: relative;
@@ -15,7 +15,8 @@ export const Container = styled.div`
 
   // cellphone query
   @media(max-width: 425px) {
-    margin-top: 0;    
+    margin-top: 0;
+    height: 1075px;    
   }
 `
 

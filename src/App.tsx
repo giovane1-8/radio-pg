@@ -7,6 +7,7 @@ import { Sobre } from './components/Sobre'
 import { BannerPromocional } from './components/BannerPromocional'
 import { PedirUmaMusica } from './components/PedirUmaMusica'
 import { FervendoNaPG } from './components/FervendoNaPG'
+import { Depoimentos } from './components/Depoimentos'
 
 export const App = () => {
   return (
@@ -17,6 +18,7 @@ export const App = () => {
       <BannerPromocional />
       <PedirUmaMusica />
       <FervendoNaPG />
+      <Depoimentos />
     </ThemeProvider>
   )
 }

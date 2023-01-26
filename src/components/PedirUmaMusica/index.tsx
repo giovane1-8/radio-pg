@@ -26,7 +26,15 @@ export const PedirUmaMusica = () => {
     <Container>
       <Content>
         <Title><Icon src={musicIcon} />E aí, o que quer ouvir?</Title>
-        <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu urna nunc. Nulla elementum scelerisque varius. Maecenas tempus suscipit metus, vitae luctus dolor semper et. Nam vulputate volutpat mauris in eleifend. In placerat iaculis sem ut malesuada. Suspendisse potenti. Morbi consequat mi et tortor blandit laoreet. Nam feugiat ullamcorper eros sit amet malesuada. Nam vel metus aliquam, consectetur nisl non, porta augue. Ut sodales elementum libero a faucibus. Mauris pellentesque luctus velit, eget malesuada dolor mollis sed. Sed mattis dui eget lectus ornare, in efficitur tortor vehicula.</Text>
+        <Text style={{ marginTop: '4rem' }}>Na Rádio PG, você é o nosso principal convidado! </Text>
+
+        <Text>
+          Temos um sistema de pedidos de músicas on-line, onde você pode pedir a música que deseja ouvir e para quem irá dedicá-la. Não importa se você quer ouvir uma música romântica para o seu amor, ou uma música animada para animar seus amigos, nós temos a música certa para cada momento.
+        </Text>
+
+        <Text>
+          Não perca mais tempo e faça seu pedido agora! Sintonize-se conosco e ouça sua música favorita na Rádio PG.      
+        </Text>
       </Content>
 
       <Form>
