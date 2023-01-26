@@ -17,6 +17,8 @@ export const Container = styled.div`
   @media(max-width: 425px) {
     padding: 15px;
     padding-bottom: 350px;
+
+    margin: 0 auto;
   }
 `
 
@@ -67,6 +69,7 @@ export const LeftContentContainer = styled.div`
   // cellphone query
   @media(max-width: 425px) {
     text-align: center;
+    margin: 0;
   }
 `
 
@@ -102,6 +105,21 @@ export const Title = styled.h1`
 
   display: flex;
   align-items: center;  
+
+  // cellphone query
+  @media(max-width: 425px) {
+    font-size: 15px;
+  }
+`
+
+export const RightTitle = styled.h1`
+  font-family: 'Montserrat';
+  font-size: 2.375rem;
+  font-weight: 500;
+
+  display: flex;
+  align-items: center;
+  justify-content: right;
 
   // cellphone query
   @media(max-width: 425px) {

@@ -1,6 +1,7 @@
 import {
   Container,
   Title,
+  RightTitle,
   Text,
   Icon,
   Flex,
@@ -37,7 +38,7 @@ export const Sobre = () => {
 
       <Flex>
         <LeftContentContainer>
-          <Title style={{ justifyContent: 'end' }}>Por quê escutar a Rádio PG?<Icon src={star} style={{marginLeft: 10 }} /></Title>
+          <RightTitle>Por quê escutar a Rádio PG?<Icon src={star} style={{marginLeft: 10 }} /></RightTitle>
           <Text>
             A Rádio PG é mais do que uma simples rádio web, somos uma equipe apaixonada por comunicação e trabalhamos sem fins lucrativos, tendo como objetivo as ações sociais. Através da transmissão da nossa rádio, nosso objetivo é conectar nossos ouvintes a ONGs, e assim contribuir para a arrecadação de alimentos não perecíveis, roupas, cobertores, entre outros itens, para ajudar no combate a fome e ao frio.
           </Text>
