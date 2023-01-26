@@ -1,16 +1,22 @@
 import {
   Container,
   Image,
+  ImageMobile,
   ContentContainer,
   TitleContainer,
   QRCode,
   Title,
   LightTitle,
   Content,
+  Link,
+  Icon,
 } from './style'
 
 import imgDestaque from '../../utils/images/destaque-promocional.png'
+import imgDestaqueMobile from '../../utils/images/destaque-promocional-mobile.png'
 import qrCode from '../../utils/images/destaque-promocional-qrcode.png'
+
+import like from '../../utils/icons/like.svg'
 
 export const BannerPromocional = () => {
   return (
@@ -34,6 +40,10 @@ export const BannerPromocional = () => {
           Nós convidamos nossos ouvintes a ajudar no que for possível, doando alimentos não perecíveis, cobertores e participando dos bazares comunitários. A sua ajuda, por menor que seja, pode fazer toda a diferença na vida dessas pessoas.
         </Content>
       </ContentContainer>
+
+      {/* mobile content */}
+      <ImageMobile src={imgDestaqueMobile} />
+      <Link href="#!"><Icon src={like} />Clique aqui</Link>
     </Container>
   )
 }

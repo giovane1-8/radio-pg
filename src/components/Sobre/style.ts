@@ -16,6 +16,7 @@ export const Container = styled.div`
   // cellphone query
   @media(max-width: 425px) {
     padding: 15px;
+    padding-bottom: 350px;
   }
 `
 
@@ -139,7 +140,7 @@ export const ImageMobile = styled.img`
   // cellphone query
   @media(max-width: 425px) {
     display: inherit;
-    
+
     position: absolute;
     bottom: 0;
     right: 0;
