@@ -10,6 +10,7 @@ export const Banner = styled.div`
   // cellphone query
   @media(max-width: 425px) {
     height: 95vh;
+    width: 425px
   }
 `
 

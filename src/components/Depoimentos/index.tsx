@@ -9,8 +9,6 @@ import {
   Locale,
   Title,
   Content,
-  Flex,
-  Shadow
 } from './style'
 
 type Carousel = {
@@ -79,11 +77,6 @@ export const Depoimentos = () => {
           })}
         </Inner>
       </Carousel>
-
-      {/* <Flex>
-        <Shadow></Shadow>
-        <Shadow></Shadow>
-      </Flex> */}
     </Main>
   )
 }

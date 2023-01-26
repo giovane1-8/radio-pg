@@ -13,6 +13,10 @@ export const Title = styled.div`
   font-size: 70px;
   font-family: 'Montserrat';
   font-weight: 500;
+
+  @media(max-width: 425px) {
+    font-size: 23px;
+  }  
 `
 
 export const Grid = styled.div`
@@ -24,6 +28,11 @@ export const Grid = styled.div`
 
   gap: 40px;
   margin-top: 90px;
+
+  // cellphone query
+  @media(max-width: 425px) {
+    grid-template-columns: repeat(1, auto);
+  }
 `
 
 export const Cell = styled.div`
@@ -39,12 +48,21 @@ export const Cell = styled.div`
 
   background-color: red;
   position: relative;
+
+  @media(max-width: 425px) {
+    width: 350px;
+  }  
 `
 
 export const Background = styled.img`
   position: absolute;
   border-radius: 30px;
   filter: brightness(50%);
+
+  @media(max-width: 425px) {
+    height: 280px;
+    width: 350px;
+  }  
 `
 
 export const SubTitle = styled.div`
@@ -56,4 +74,9 @@ export const SubTitle = styled.div`
   text-align: center;
 
   z-index: 10;
+
+  // cellphone query
+  @media(max-width: 425px) {
+    font-size: 18px;
+  }
 `
