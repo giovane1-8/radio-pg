@@ -6,6 +6,11 @@ export const Banner = styled.div`
   background-image: url('https://www.juicysantos.com.br/wp-content/uploads/2020/01/Praia-Grande.jpg');
 
   position: relative;
+
+  // cellphone query
+  @media(max-width: 425px) {
+    height: 95vh;
+  }
 `
 
 export const Header = styled.div`
@@ -16,6 +21,11 @@ export const Header = styled.div`
   padding: 4rem 12.5rem 0;
 
   font-family: 'Montserrat', sans-serif;
+
+  // cellphone query
+  @media(max-width: 425px) {
+    justify-content: center;
+  }
 `
 
 export const Image = styled.img`
@@ -32,6 +42,11 @@ export const NavigationWrapper = styled.ul`
 
   list-style: none;
   font-size: 1.25rem;
+
+  // cellphone query
+  @media(max-width: 425px) {
+    display: none;
+  }
 `
 
 export const ListItem = styled.a`
@@ -60,6 +75,16 @@ export const Footer = styled.div`
   align-items: center;
 
   margin: 0 12.5rem 5.5rem 0;
+
+  // cellphone query
+  @media(max-width: 425px) {
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    margin: 0;
+    padding: 43px 24px;
+  }
 `
 
 export const Button = styled.button`
