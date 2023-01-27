@@ -15,8 +15,9 @@ export const Container = styled.div`
   
   // cellphone query
   @media(max-width: 425px) {
-    padding: 15px;
-    padding-bottom: 350px;
+    padding: 50px;
+    padding-bottom: 450px;
+    max-width: none;
 
     margin: 0 auto;
   }
@@ -30,7 +31,7 @@ export const Flex = styled.div`
   // cellphone query
   @media(max-width: 425px) {
     :nth-child(2) {
-      margin-top: 70px;
+      margin-top: 50px;
     }
   }
 `
@@ -56,8 +57,14 @@ export const RightContentContainer = styled.div`
 
   // cellphone query
   @media(max-width: 425px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
     text-align: center;
     margin: 0;
+    margin-bottom: 40px;
   }
 `
 
@@ -68,6 +75,11 @@ export const LeftContentContainer = styled.div`
 
   // cellphone query
   @media(max-width: 425px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
     text-align: center;
     margin: 0;
   }
@@ -108,7 +120,9 @@ export const Title = styled.h1`
 
   // cellphone query
   @media(max-width: 425px) {
-    font-size: 15px;
+    font-size: 15.5px;
+    justify-content: center;
+    align-items: center;
   }
 `
 
@@ -131,14 +145,15 @@ export const RightTitle = styled.h1`
 export const Text = styled.p`
   font-family: 'Inter';
   font-size: 1.25rem;
-  font-weight: 400;
+  font-weight: 300;
 
   margin-top: 2.1875rem;
 
   // cellphone query
   @media(max-width: 425px) {
     font-size: 12px;
-    margin-top: 22px;
+    margin-top: 17px;
+    width: 80%;
   }
 `
 
@@ -164,6 +179,8 @@ export const ImageMobile = styled.img`
     right: 0;
     left: 0;
 
+    padding: none;
     width: 100%;
+
   }
 `

@@ -118,6 +118,21 @@ export const Input = styled.input`
   }
 `
 
+export const Button = styled.input`
+  width: 100%;
+
+  border: 0;
+  background-color: ${props => props.theme.colors.black};
+
+  color: ${props => props.theme.colors.white};
+  font-size: 20px;
+
+  padding: 20px 0;
+  border-radius: 30px;
+
+  cursor: pointer;
+`
+
 export const Margin = styled.div`
   margin-top: 1.5625rem;
 `

@@ -26,7 +26,8 @@
 @media(max-width: 425px) {
   .swiper {
     margin-top: 35px;
-    width: 100%;
+    width: 80%;
+    margin-left: 20%;
   }
   .item {
     flex-direction: column;
