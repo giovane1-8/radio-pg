@@ -7,6 +7,7 @@ import {
   Form,
   Label,
   Input,
+  Button,
   Margin
 } from './style'
 
@@ -66,7 +67,7 @@ export const PedirUmaMusica = () => {
           <Input type="text" id='email' value={email} onChange={(e: any) => { setEmail(e.target.value) }} placeholder='Seu nome' />
         </Margin>
 
-        <Margin style={{ display: 'flex', gap: 50 }}>
+        <Margin style={{ display: 'flex', gap: 20 }}>
           <div>
             <Label htmlFor="state">Seu estado:</Label>
             <Input type="text" id='state' value={state} onChange={(e: any) => { setState(e.target.value) }} placeholder='Estado' />
@@ -89,8 +90,7 @@ export const PedirUmaMusica = () => {
         </Margin>
 
         <Margin>
-          <Label htmlFor="enviar">Enviar</Label>
-          <input id="enviar" type="submit" onClick={(e) => {
+          <Button id="enviar" type="submit" onClick={(e) => {
             e.preventDefault()
             handleSendMusic()
           }} />

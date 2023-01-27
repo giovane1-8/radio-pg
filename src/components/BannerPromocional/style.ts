@@ -6,9 +6,28 @@ export const Container = styled.div`
   align-items: center;
   
   min-width: 100%;
-  height: 660px;
+  height: 70vh;
   margin-top: 250px;
+
+  position: relative;
   
+  background-color: ${props => props.theme.colors.primary};
+
+  // cellphone query
+  @media(max-width: 425px) {
+    margin-top: 0;  
+  }
+`
+
+export const SecondContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  min-width: 100%;
+  height: 70vh;
+  margin-top: 250px;
+
   position: relative;
   
   background-color: ${props => props.theme.colors.primary};
@@ -16,17 +35,24 @@ export const Container = styled.div`
   // cellphone query
   @media(max-width: 425px) {
     margin-top: 0;
-    height: 1075px;    
+    height: 1415px;  
   }
 `
 
-export const Image = styled.img`
-  position: absolute;
-  bottom: 0;
-  left: 0;
+export const ImageContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+`
 
+export const Image = styled.img`
   width: 785px;
   margin-left: 90px;
+  
+  position: absolute;
+  bottom: 0;
 
   // cellphone query
   @media(max-width: 425px) {
@@ -39,7 +65,7 @@ export const ContentContainer = styled.div`
   right: 0;
 
   max-width: 45%;
-  margin-right: 150px;
+  margin-right: 80px;
 
   // cellphone query
   @media(max-width: 425px) {
@@ -68,6 +94,13 @@ export const QRCode = styled.img`
   // cellphone query
   @media(max-width: 425px) {
     display: none;
+  }
+`
+
+export const Logo = styled.img`
+  // cellphone query
+  @media(max-width: 425px) {
+    width: 200px;
   }
 `
 
@@ -124,7 +157,7 @@ export const ImageMobile = styled.img`
     left: 0;
     right: 0;
 
-    width: 425px;
+    width: 100%;
   }
 `
 

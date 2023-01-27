@@ -1,17 +1,19 @@
 import styled from 'styled-components'
 
 export const Banner = styled.div`
-  height: 90vh;
-  /* background-color: ${props => props.theme.colors.lightGray}; */
-  background-image: url('https://www.juicysantos.com.br/wp-content/uploads/2020/01/Praia-Grande.jpg');
-
-  position: relative;
+  height: 100vh;
+  min-width: 100%;
+  overflow: hidden;
 
   // cellphone query
   @media(max-width: 425px) {
-    height: 95vh;
-    width: 425px
+    width: 100%;
   }
+`
+
+export const BackgroundVideo = styled.video`
+  min-width: 100%;
+  z-index: -1;
 `
 
 export const Header = styled.div`
@@ -19,6 +21,9 @@ export const Header = styled.div`
   justify-content: space-between;
   align-items: center;
 
+  position: absolute;
+  top: 0;
+  width: 100%;
   padding: 4rem 12.5rem 0;
 
   font-family: 'Montserrat', sans-serif;
@@ -38,12 +43,13 @@ export const NavigationWrapper = styled.ul`
   display: flex;
   justify-content: space-around;
   align-items: center;
-
+  gap: 5%;
+  
   width: 55%;
-
+  
   list-style: none;
-  font-size: 1.25rem;
-
+  font-size: 1rem;
+  
   // cellphone query
   @media(max-width: 425px) {
     display: none;
@@ -84,7 +90,10 @@ export const Footer = styled.div`
     bottom: 0;
 
     margin: 0;
-    padding: 43px 24px;
+    justify-content: center;
+    margin-bottom: 50px;
+    
+    width: 100%;
   }
 `
 
@@ -116,10 +125,4 @@ export const ButtonGlow = styled.button`
   border: 0;
   
   cursor: pointer;
-`
-
-export const VerticalBlur = styled.div`
-  width: inherit;
-  height: 80vh;
-  background: linear-gradient(to top, #fff 10%, transparent 25%);
 `
