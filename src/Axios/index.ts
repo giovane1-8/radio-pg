@@ -1,6 +1,6 @@
 import axios from "axios"
 
 export const apiAxios = axios.create({
-    baseURL: 'http://localhost/',
+    baseURL: 'https://api.radiopg.com.br/',
     responseType: 'json'
 })

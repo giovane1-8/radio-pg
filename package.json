@@ -1,5 +1,6 @@
 {
   "name": "radio-pg",
+  "homepage": "https://radiopg.com.br",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,6 +11,7 @@
   },
   "dependencies": {
     "@types/styled-components": "^5.1.26",
+    "axios": "^1.2.5",
     "framer-motion": "^8.5.2",
     "localforage": "^1.10.0",
     "match-sorter": "^6.3.1",
