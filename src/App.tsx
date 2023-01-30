@@ -14,14 +14,16 @@ import { Footer } from './components/Footer'
 import { Alert } from './components/Alert'
 
 export const App = () => {
+  alert('Site em desenvolvimento!')
+
   return (
     <ThemeProvider theme={_default}>
       <GlobalStyle />
-      <Alert />
+      {/* <Alert /> */}
       <InitialBanner />
       <Sobre />
       <BannerPromocional />
-      <PedirUmaMusica />
+      {/* <PedirUmaMusica /> */}
       <KarineOuriques />
       <FervendoNaPG />
       {/* <Depoimentos /> */}

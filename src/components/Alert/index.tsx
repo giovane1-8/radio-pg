@@ -48,10 +48,10 @@ export const Alert = () => {
           Atualmente estamos cadastrando ONGs para parceria, pois acreditamos que juntos podemos fazer a diferença na vida de muitas pessoas. Se você tem uma ONG ou conhece alguma que possa se beneficiar desse tipo de parceria, entre em contato conosco. Juntos, podemos fazer a nossa parte e ajudar a mudar o mundo.
         </Text>
 
-        <Footer>
+        {/* <Footer>
           <Date>Estreia <GlowText>18/02/2023</GlowText></Date>
           <h2>10hs da manhã</h2>
-        </Footer>
+        </Footer> */}
       </Container>
     </Background>
   )

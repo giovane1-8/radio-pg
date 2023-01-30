@@ -7,15 +7,19 @@ export const Container = styled.div`
   flex-direction: column;
 
   margin-top: 12.5rem;
+
+  width: 100%;
+  max-width: 80%;
+  margin-left: 10%;
 `
 
 export const Title = styled.div`
-  font-size: 70px;
+  font-size: 7rem;
   font-family: 'Montserrat';
   font-weight: 500;
 
   @media(max-width: 425px) {
-    font-size: 23px;
+    font-size: 2.3rem;
   }  
 `
 
@@ -46,7 +50,6 @@ export const Cell = styled.div`
   padding: 25px;
   border-radius: 30px;
 
-  background-color: red;
   position: relative;
 
   @media(max-width: 425px) {
@@ -66,7 +69,7 @@ export const Background = styled.img`
 `
 
 export const SubTitle = styled.div`
-  font-size: 24px;
+  font-size: 2.4rem;
   font-family: 'Montserrat';
   font-weight: 700;
   color: ${props => props.theme.colors.white};
@@ -77,6 +80,6 @@ export const SubTitle = styled.div`
 
   // cellphone query
   @media(max-width: 425px) {
-    font-size: 18px;
+    font-size: 1.8px;
   }
 `

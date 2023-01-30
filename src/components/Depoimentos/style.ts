@@ -9,6 +9,10 @@ export const Main = styled(motion.div)`
   width: 100%;
   max-width: 80%;
 
+  width: 100%;
+  max-width: 80%;
+  margin-left: 10%;
+
   margin: 0 auto;
   margin-top: 260px;
   
@@ -50,7 +54,7 @@ export const Card = styled.div`
   background: linear-gradient(125deg, #D6F08D, #A7C36A, #3C7B1E);
 
   font-family: 'Montserrat';
-  font-size: 26px;
+  font-size: 2.6rem;
 
   // cellphone query
   @media(max-width: 425px) {
@@ -60,16 +64,15 @@ export const Card = styled.div`
   }
 `
 export const Name = styled.div`
-  font-size: 26px;
+  font-size: 1em;
   font-weight: 500;
 
   margin-bottom: 5px;
-
 `
 
 export const Locale = styled.div`
   font-family: 'Inter';
-  font-size: 16px;
+  font-size: 1.6rem;
   font-weight: 400;
 
   margin-bottom: 25px;
@@ -83,7 +86,7 @@ export const Title = styled.div`
 
 export const Content = styled.div`
   font-family: 'Inter';
-  font-size: 13px;
+  font-size: 1.3rem;
   font-weight: 400;
 
   // cellphone query
