@@ -1,6 +1,6 @@
 .swiper {
-  min-height: 344px;
-  width: 1286px;
+  min-height: 34.5rem;
+  width: 65%;
 
   margin-top: 110px;
 
@@ -23,18 +23,31 @@
   align-items: center;
 }
 
+@media(max-width: 1315px) {
+  .swiper {
+    width: 80%;
+  }
+}
+
+@media(max-width: 1015px) {
+  .item {
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
 @media(max-width: 425px) {
   .swiper {
     margin-top: 35px;
     width: 80%;
-    margin-left: 20%;
+    margin-left: 10%;
   }
   .item {
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 25px 35px;
-    max-width: 80%;
+    max-width: 100%;
     min-height: 400px;
   }
 }

@@ -16,7 +16,15 @@ export const Container = styled.div`
 
   font-family: 'Inter';
 
-  // cellphone query
+  @media(max-width: 1150px) {
+    padding: 100px;
+  }
+
+  @media(max-width: 860px) {
+    min-height: 60vh;
+    padding: 50px 100px;
+  }
+
   @media(max-width: 425px) {
     min-height: 800px;
     flex-direction: column;
@@ -33,9 +41,9 @@ export const Details = styled.div`
   color: ${props => props.theme.colors.white};
 
   // cellphone query
-  @media(max-width: 425px) {
+  @media(max-width: 860px) {
     flex-direction: column;
-    justify-content: left;
+    align-items: center;
 
     gap: 50px;
   }
@@ -60,16 +68,28 @@ export const DivIcon = styled.div`
 
 export const Icon = styled.img`
   margin-top: 25px;
+
+  @media(max-width: 860px) {
+    width: 50px;
+  }
 `
 
 export const Title = styled.h1`
-  font-size: 25px;
+  font-size: 2.5rem;
   font-weight: 300;
+
+  @media(max-width: 860px) {
+    font-size: 3.5rem;
+  }
 `
 
 export const SubTitle = styled.h2`
   font-size: 18px;
   font-weight: 300;
+
+  @media(max-width: 860px) {
+    font-size: 2.5rem;
+  }
 `
 
 export const Code = styled.img`
@@ -78,15 +98,20 @@ export const Code = styled.img`
 export const Extra = styled.div`
   display: flex;
   align-items: center;
-  gap: 35px;
+  gap: 3.5rem;
   
+  @media(max-width: 860px) {
+    justify-content: center;
+    margin-top: 3.5rem;
+  }
+
   // cellphone query
   @media(max-width: 425px) {
     justify-content: space-between;
     flex-direction: column;
     font-size: 18px;
     gap: 15px;
-}
+  }
 `
 
 export const Language = styled.p`

@@ -58,7 +58,7 @@ export const Parceiros = () => {
 
   return (
     <Container>
-      <Title><Icon src={success} /> Nossos parceiros</Title>
+      <Title><Icon src={success} />Nossos apoiadores</Title>
 
       <Swiper
         className='swiper'
