@@ -23,11 +23,11 @@ export const Footer = () => {
     <Container>
       <Details>
         <Links>
-          <Ul>
+          {/* <Ul>
             <li>Quem somos</li>
             <li>Perguntas frequentes</li>
             <li>Contato</li>
-          </Ul>
+          </Ul> */}
 
           <DivIcon>
             <Icon src={facebook} />

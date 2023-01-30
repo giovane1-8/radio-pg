@@ -21,17 +21,21 @@ export const Container = styled.div`
 
 export const Title = styled.div`
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
 
   font-weight: 500;
-  font-size: 70px;
+  font-size: 7rem;
 
   gap: 40px;
 
-  // cellphone query
+  @media(max-width: 980px) {
+  justify-content: center;
+
+  }
+
   @media(max-width: 425px) {
-    font-size: 26px;
+    font-size: 2.6rem;
     gap: 8px;
   }
 `
@@ -66,11 +70,11 @@ export const Content = styled.div`
 
 export const ContentTitle = styled.h1`
   font-weight: 700;
-  font-size: 40px;
+  font-size: 4rem;
 
   // cellphone query
   @media(max-width: 425px) {
-    font-size: 22px;
+    font-size: 2.2rem;
     margin-top: 25px;
   }
 `
@@ -78,18 +82,18 @@ export const ContentTitle = styled.h1`
 export const SubTitle = styled.h2`
   font-family: 'Inter';
   font-weight: 300;
-  font-size: 18px;
+  font-size: 1.8rem;
 
   // cellphone query
   @media(max-width: 425px) {
-    font-size: 12px;
+    font-size: 1.2rem;
   }
 `
 
 export const Text = styled.p`
   font-family: 'Inter';
   font-weight: 300;
-  font-size: 16px;
+  font-size: 1.6rem;
 
   margin-top: 25px;
 
@@ -97,7 +101,7 @@ export const Text = styled.p`
 
   // cellphone query
   @media(max-width: 425px) {
-    font-size: 14px;
+    font-size: 1.4rem;
   }
 `
 
