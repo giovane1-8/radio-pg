@@ -6,8 +6,7 @@ export const Container = styled.div`
   align-items: center;
   flex-direction: column;
 
-  width: 95%;
-
+  width: 100%;
   margin-top: 200px;
 
   font-family: 'Montserrat';
@@ -21,7 +20,7 @@ export const Container = styled.div`
 
 export const Title = styled.div`
   display: flex;
-  justify-content: left;
+  justify-content: center;
   align-items: center;
 
   font-weight: 500;
@@ -29,9 +28,18 @@ export const Title = styled.div`
 
   gap: 40px;
 
-  @media(max-width: 980px) {
-  justify-content: center;
+  @media(max-width: 1100px) {
+    font-size: 5rem;
+    gap: 20px;
+  }
 
+  @media(max-width: 700px) {
+    font-size: 4rem;
+    gap: 15px;
+  }
+
+  @media(max-width: 700px) {
+    flex-direction: column;
   }
 
   @media(max-width: 425px) {
@@ -43,7 +51,14 @@ export const Title = styled.div`
 export const Icon = styled.img`
   width: 84px;
 
-  // cellphone query
+  @media(max-width: 1100px) {
+    width: 7rem;
+  }
+
+  @media(max-width: 700px) {
+    width: 6rem;
+  }
+
   @media(max-width: 425px) {
     width: 35px;
   }
@@ -61,10 +76,10 @@ export const Image = styled.img`
 export const Content = styled.div`
   margin-left: 80px;
 
-  // cellphone query
-  @media(max-width: 425px) {
-    margin: 0;
+  @media(max-width: 1315px) {
     text-align: center;
+    margin: 0;
+    margin-top: 15px;
   }
 `
 
@@ -72,7 +87,10 @@ export const ContentTitle = styled.h1`
   font-weight: 700;
   font-size: 4rem;
 
-  // cellphone query
+  @media(max-width: 1065px) {
+    font-size: 3.5rem;
+  }
+
   @media(max-width: 425px) {
     font-size: 2.2rem;
     margin-top: 25px;
@@ -99,7 +117,10 @@ export const Text = styled.p`
 
   color: #000;
 
-  // cellphone query
+  @media(max-width: 1315px) {
+    font-size: 2rem;
+  }
+
   @media(max-width: 425px) {
     font-size: 1.4rem;
   }
@@ -109,6 +130,12 @@ export const Footer = styled.div`
   display: flex;
   margin-top: 60px;
   gap: 25px;
+
+  @media(max-width: 1315px) {
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
 `
 
 export const Link = styled.a`
