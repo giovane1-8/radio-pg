@@ -43,7 +43,7 @@ export const Parceiros = () => {
       <Swiper
         className='swiper'
         modules={[Navigation, Pagination, Autoplay, EffectFade]}
-        slidesPerView={1} 
+        slidesPerView={1}
         autoplay={{ delay: 2500, pauseOnMouseEnter: false }}
         effect="fade"
         navigation
@@ -59,7 +59,7 @@ export const Parceiros = () => {
               <Link target='_blank' href='https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Flinkerweb.com.br%2F#'><SocialMedia src={facebook} /></Link>
               <Link target='_blank' href='https://linkerweb.com.br/#'><SocialMedia src={internet} /></Link>
             </Footer>
-          </Content> 
+          </Content>
         </SwiperSlide>
 
         <SwiperSlide className='item'>
@@ -76,7 +76,7 @@ export const Parceiros = () => {
 '><SocialMedia src={youtube} /></Link>
               <Link target='_blank' href='https://www.versusimobiliaria.com.br'><SocialMedia src={internet} /></Link>
             </Footer>
-          </Content> 
+          </Content>
         </SwiperSlide>
 
         <SwiperSlide className='item'>
@@ -90,7 +90,7 @@ export const Parceiros = () => {
               <Link target='_blank' href='https://www.youtube.com/@KarineOuriques_oficial'><SocialMedia src={instagram} /></Link>
               <Link target='_blank' href='https://www.instagram.com/karineouriques_oficial/'><SocialMedia src={youtube} /></Link>
             </Footer>
-          </Content> 
+          </Content>
         </SwiperSlide>
       </Swiper>
     </Container>

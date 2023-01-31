@@ -11,10 +11,6 @@ export const Banner = styled.div`
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  
-  // cellphone query
-  @media(max-width: 768px) {
-  }
 
   // cellphone query
   @media(max-width: 1050px) {

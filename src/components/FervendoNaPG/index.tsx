@@ -63,7 +63,7 @@ export const FervendoNaPG = () => {
             <Cell key={index} target='_blank' href='https://google.com'>
               <Background src={item.img} />
               <SubTitle>{item.title}</SubTitle>
-            </Cell>  
+            </Cell>
           )
         })}
       </Grid>

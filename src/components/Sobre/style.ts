@@ -18,8 +18,8 @@ export const Container = styled.div`
   top: 0;
 
   @media(max-width: 1470px) {
-    max-width: 70%;
-    margin-left: 15%;
+    max-width: 90%;
+    margin-left: 5%;
 
     display: flex;
     justify-content: center;
@@ -29,9 +29,15 @@ export const Container = styled.div`
     gap: 75px;
   }
 
-  @media(max-width: 1025px) {
+  @media(max-width: 1160px) {
     max-width: 90%;
     margin-left: 5%;
+  }
+
+  @media(max-width: 995px) {
+    max-width: 100%;
+    width: 100%;
+    margin-left: 0;
   }
 
   @media(max-width: 660px) {
@@ -42,6 +48,7 @@ export const Container = styled.div`
   // cellphone query
   @media(max-width: 425px) {
     padding: 0;
+    padding-top: 35px;
     margin-left: 0px;
     gap: 0px;
     padding-bottom: 450px;
@@ -55,9 +62,9 @@ export const Flex = styled.div`
   justify-content: center;
   align-items: center;
 
-  @media(max-width: 1470px) {
+  @media(max-width: 800px) {
     flex-direction: column;
-    text-align: center;
+    gap: 50px;
   }
 
   @media(max-width: 660px) {
@@ -73,15 +80,32 @@ export const LeftImage = styled.img`
   background-repeat: no-repeat;
   background-size: cover;
 
-  // cellphone query
+  @media(max-width: 1400px) {
+    width: 450px;
+  }
+
+  @media(max-width: 1160px) {
+    width: 385px;
+  }
+
+  @media(max-width: 960px) {
+    width: 350px;
+  }
+
+  @media(max-width: 850px) {
+    width: 300px;
+  }
+
   @media(max-width: 540px) {
     display: none;
   }
 `
 
 export const RightContentContainer = styled.div`
+  @media(max-width: 800px) {
+    text-align: center;
+  }
 
-  // cellphone query
   @media(max-width: 425px) {
     display: flex;
     justify-content: center;
@@ -99,7 +123,10 @@ export const LeftContentContainer = styled.div`
   text-align: right;
   margin-right: 2.5rem;
 
-  // cellphone query
+  @media(max-width: 800px) {
+    text-align: center;
+  }
+
   @media(max-width: 425px) {
     display: flex;
     justify-content: center;
@@ -108,10 +135,6 @@ export const LeftContentContainer = styled.div`
 
     text-align: center;
     margin: 0;
-  }
-
-  @media(max-width: 1470px) {
-    text-align: center;
   }
 `
 
@@ -122,13 +145,11 @@ export const RightImage = styled.img`
   background-size: cover;
   width: 50%;
 
-
-  // cellphone query
-  @media(max-width: 425px) {
+  @media(max-width: 800px) {
     display: none;
   }
 
-  @media(max-width: 1470px) {
+  @media(max-width: 425px) {
     display: none;
   }
 `
@@ -150,7 +171,7 @@ export const Title = styled.h1`
   font-weight: 500;
 
   display: flex;
-  align-items: center; 
+  align-items: center;
 
   @media(max-width: 1745px) {
     font-size: 3.3rem
@@ -161,14 +182,16 @@ export const Title = styled.h1`
   }
 
   @media(max-width: 1470px) {
-    justify-content: center;
-    font-size: 3.3rem;
+    font-size: 2.5rem
+  }
 
-    margin-top: 3rem;
+  @media(max-width: 1090px) {
+    font-size: 2rem
   }
 
   @media(max-width: 800px) {
     font-size: 3rem;
+    justify-content: center;
   }
 
   @media(max-width: 670px) {
@@ -207,14 +230,19 @@ export const RightTitle = styled.h1`
   }
 
   @media(max-width: 1470px) {
-    justify-content: center;
-    font-size: 3.3rem;
+    font-size: 2.5rem
+  }
 
-    margin-top: 3rem;
+  @media(max-width: 1090px) {
+    font-size: 2rem
   }
 
   @media(max-width: 800px) {
     font-size: 3rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 15px;
   }
 
   @media(max-width: 670px) {
@@ -235,7 +263,14 @@ export const Text = styled.p`
 
   margin-top: 2.1875rem;
 
-  // cellphone query
+  @media(max-width: 1215px) {
+    font-size: 1.5rem;
+  }
+
+  @media(max-width: 860px) {
+    font-size: 1.35rem;
+  }
+
   @media(max-width: 425px) {
     font-size: 1.2rem;
     margin-top: 17px;
@@ -245,14 +280,17 @@ export const Text = styled.p`
 
 export const Icon = styled.img`
   width: 4rem;
-  
-  // cellphone query
-  @media(max-width: 425px) {
-    width: 20px;
+
+  @media(max-width: 1090px) {
+    width: 3rem;
   }
 
   @media(max-width: 660px) {
     width: 8rem;
+  }
+
+  @media(max-width: 425px) {
+    width: 20px;
   }
 `
 
@@ -270,6 +308,5 @@ export const ImageMobile = styled.img`
 
     padding: none;
     width: 100%;
-
   }
 `

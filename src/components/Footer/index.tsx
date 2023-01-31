@@ -37,7 +37,7 @@ export const Footer = () => {
         </Links>
 
         <div>
-          <Title>Parceiros</Title> 
+          <Title>Parceiros</Title>
           <SubTitle>Versus Imobiliária</SubTitle>
           <SubTitle>Karine Ouriques</SubTitle>
           <SubTitle>LinkerWeb</SubTitle>
