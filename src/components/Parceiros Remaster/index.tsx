@@ -80,7 +80,7 @@ export const Parceiros = () => {
       <Swiper
         className='swiper'
         modules={[Navigation, Pagination, Autoplay, EffectFade]}
-        slidesPerView={1} 
+        slidesPerView={1}
         autoplay={{ delay: 2500, pauseOnMouseEnter: false }}
         effect="fade"
         navigation
@@ -101,7 +101,7 @@ export const Parceiros = () => {
                   <Link href=''><SocialMedia src={youtube} /></Link>
                   <Link href=''><SocialMedia src={linkedin} /></Link>
                 </Footer>
-              </Content> 
+              </Content>
             </SwiperSlide>
           )
         })}

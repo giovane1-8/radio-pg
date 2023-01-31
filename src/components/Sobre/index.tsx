@@ -34,7 +34,7 @@ export const Sobre = () => {
           Nossa rádio pode ser ouvida através de áudio digital utilizando seu notebook, computador, smart tv, aplicativo e até mesmo o Echo Dot. Com a Rádio PG, você tem acesso a conteúdos de qualidade em qualquer lugar e a qualquer hora. Não perca mais tempo e sintonize-se conosco agora!
           </Text>
         </RightContentContainer>
-      </Flex> 
+      </Flex>
 
       <Flex>
         <LeftContentContainer>
@@ -47,7 +47,7 @@ export const Sobre = () => {
           </Text>
         </LeftContentContainer>
         <RightImage src={gridRightImage} />
-      </Flex> 
+      </Flex>
 
       <ImageMobile src={gridMobileImage} />
     </Container>

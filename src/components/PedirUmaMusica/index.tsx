@@ -52,7 +52,7 @@ export const PedirUmaMusica = () => {
         </Text>
 
         <Text>
-          Não perca mais tempo e faça seu pedido agora! Sintonize-se conosco e ouça sua música favorita na Rádio PG.      
+          Não perca mais tempo e faça seu pedido agora! Sintonize-se conosco e ouça sua música favorita na Rádio PG.
         </Text>
       </Content>
 

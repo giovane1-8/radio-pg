@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-import { 
+import {
   Banner,
   Container,
   BackgroundVideo,
@@ -22,7 +22,7 @@ import playOne from '../../utils/icons/play-one.svg'
 import backgroundVideo from '../../utils/videos/banner-background.mp4'
 
 export const InitialBanner = () => {
-  const [inLive, IsInLive] = useState<boolean>(true)
+  const [inLive, IsInLive] = useState<boolean>(false)
 
   return (
     <Banner>
