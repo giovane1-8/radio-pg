@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Link } from 'react-scroll'
 
 import {
   Banner,
@@ -7,12 +8,11 @@ import {
   Header,
   Image,
   NavigationWrapper,
-  ListItem,
-  ListItemGlow,
   Footer,
   Button,
   ButtonGlow,
 } from './style'
+import './navigation.css'
 
 import logoFundoBranco from '../../utils/images/logoFundoBranco.png'
 import broadcast from '../../utils/icons/broadcast.svg'
@@ -30,12 +30,11 @@ export const InitialBanner = () => {
         <Header>
           <Image src={logoFundoBranco} alt="Logo Fundo Branco" />
           <NavigationWrapper>
-            <ListItem href='#!'>Sobre nós</ListItem>
-            <ListItem href='#!'>Doações</ListItem>
-            <ListItem href='#!'>As melhores</ListItem>
-            <ListItem href='#!'>Pedir uma música</ListItem>
-            <ListItem href='#!'>Notícias</ListItem>
-            <ListItemGlow href='#!'>Parceiros</ListItemGlow>
+            <Link to="about" smooth={true} duration={100} className='itemNavigation'>Sobre nós</Link>
+            <Link to="donations" smooth={true} duration={100} className='itemNavigation'>Doações</Link>
+            <Link to="requestmusic" smooth={true} duration={100} className='itemNavigation'>Pedir uma música</Link>
+            <Link to="news" smooth={true} duration={100} className='itemNavigation'>Notícias</Link>
+            <Link to="partners" smooth={true} duration={100} className='itemNavigation glow'>Parceiros</Link>
           </NavigationWrapper>
         </Header>
 

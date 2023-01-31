@@ -37,7 +37,7 @@ import facebook from '../../utils/icons/facebook.svg'
 
 export const Parceiros = () => {
   return (
-    <Container>
+    <Container id='partners'>
       <Title><Icon src={success} />Nossos apoiadores</Title>
 
       <Swiper

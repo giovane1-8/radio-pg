@@ -26,7 +26,7 @@ import like from '../../utils/icons/like.svg'
 export const BannerPromocional = () => {
   return (
     <>
-    <Container>
+    <Container id='donations'>
       <Image src={imgDestaque} />
       <ContentContainer>
         <TitleContainer>

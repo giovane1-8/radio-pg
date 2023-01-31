@@ -55,7 +55,7 @@ export const FervendoNaPG = () => {
   ]
 
   return (
-    <Container>
+    <Container id='news'>
       <Title>Fervendo na Praia Grande</Title>
       <Grid>
         {data.map((item, index) => {

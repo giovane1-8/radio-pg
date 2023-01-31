@@ -22,7 +22,7 @@ import star from '../../utils/icons/star.svg'
 
 export const Sobre = () => {
   return (
-    <Container>
+    <Container id='about'>
       <Flex>
         <LeftImage src={gridLeftImage} />
         <RightContentContainer>

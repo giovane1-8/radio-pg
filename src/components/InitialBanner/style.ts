@@ -76,22 +76,14 @@ export const NavigationWrapper = styled.ul`
   width: auto;
 
   gap: 15px;
-  
+
   list-style: none;
   font-size: 1.7rem;
-  
+
   // cellphone query
   @media(max-width: 1050px) {
     display: none;
   }
-`
-
-export const ListItem = styled.a`
-  color: ${props => props.theme.colors.white};
-  font-weight: 500;
-
-  outline: none;
-  text-decoration: none;
 `
 
 export const ListItemGlow = styled.a`
