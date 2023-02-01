@@ -21,7 +21,7 @@ export const App = () => {
       <GlobalStyle />
       {/* <Alert /> */}
       <InitialBanner />
-      <Sobre id='about' />
+      <Sobre />
       <BannerPromocional />
       {/* <PedirUmaMusica /> */}
       <KarineOuriques />
