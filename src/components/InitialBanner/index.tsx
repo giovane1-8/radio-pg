@@ -34,7 +34,7 @@ export const InitialBanner = () => {
             <Link to="donations" smooth={true} duration={100} className='itemNavigation'>Doações</Link>
             <Link to="requestmusic" smooth={true} duration={100} className='itemNavigation'>Pedir uma música</Link>
             <Link to="news" smooth={true} duration={100} className='itemNavigation'>Notícias</Link>
-            <Link to="partners" smooth={true} duration={100} className='itemNavigation glow'>Parceiros</Link>
+            <Link to="partners" smooth={true} duration={100} className='itemNavigation glow'>Apoiadores</Link>
           </NavigationWrapper>
         </Header>
 
