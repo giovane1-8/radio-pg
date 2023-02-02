@@ -7,6 +7,7 @@ import {
   Icon,
   Title,
   SubTitle,
+  Code,
   Extra,
   Language,
   P
@@ -15,32 +16,34 @@ import {
 import qrCode from '../../utils/images/footer-qrcode.png'
 import instagram from '../../utils/icons/instagram-green.svg'
 import facebook from '../../utils/icons/facebook-green.svg'
+import heart from '../../utils/icons/heart.svg'
 
 export const Footer = () => {
   return (
     <Container>
       <Details>
         <Links>
-          <Ul>
+          {/* <Ul>
             <li>Quem somos</li>
             <li>Perguntas frequentes</li>
             <li>Contato</li>
-          </Ul>
+          </Ul> */}
 
           <DivIcon>
-            <Icon src={instagram} />
             <Icon src={facebook} />
+            <Icon src={instagram} />
+            <Icon src={heart} />
           </DivIcon>
         </Links>
 
         <div>
-          <Title>Parceiros</Title> 
+          <Title>Parceiros</Title>
           <SubTitle>Versus Imobiliária</SubTitle>
           <SubTitle>Karine Ouriques</SubTitle>
           <SubTitle>LinkerWeb</SubTitle>
         </div>
 
-        <img src={qrCode} alt="qr code" />
+        <Code src={qrCode} alt="qr code" />
       </Details>
 
       <Extra>

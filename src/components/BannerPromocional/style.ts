@@ -6,30 +6,90 @@ export const Container = styled.div`
   align-items: center;
   
   min-width: 100%;
-  height: 660px;
+  height: 70vh;
   margin-top: 250px;
-  
+
   position: relative;
   
   background-color: ${props => props.theme.colors.primary};
 
-  // cellphone query
-  @media(max-width: 425px) {
+  @media(max-width: 1700px) {
     margin-top: 0;
-    height: 1075px;    
+    height: 70vh;
+  }
+
+  @media(max-width: 1620px) {
+    justify-content: center;
+    height: 80vh;
+  } 
+
+  @media(max-width: 425px) {
+    height: 75vh;
+    width: 100%;
+    margin-top: 0px;
   }
 `
 
+export const SecondContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  min-width: 100%;
+  height: 90vh;
+  margin-top: 250px;
+
+  position: relative;
+  
+  background-color: ${props => props.theme.colors.primary};
+
+  @media(max-width: 1700px) {
+    margin-top: 0;
+    height: 70vh;
+  }
+
+  @media(max-width: 1620px) {
+    justify-content: center;
+  } 
+
+  @media(max-width: 900px) {
+    height: 80vh;
+  } 
+
+  @media(max-width: 425px) {
+    margin-top: 0;
+    height: 60vh
+  }
+`
+
+export const ImageContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+`
+
 export const Image = styled.img`
+  width: 78.5rem;
+  margin-left: 5%;
+  
   position: absolute;
   bottom: 0;
-  left: 0;
 
+  @media(max-width: 1620px) {
+    display: none;
+  } 
+`
+
+export const Image2 = styled.img`
   width: 785px;
-  margin-left: 90px;
+  margin-left: 5%;
+  
+  position: absolute;
+  bottom: 0;
 
-  // cellphone query
-  @media(max-width: 425px) {
+  @media(max-width: 1620px) {
     display: none;
   }
 `
@@ -37,11 +97,23 @@ export const Image = styled.img`
 export const ContentContainer = styled.div`
   position: absolute;
   right: 0;
-
   max-width: 45%;
-  margin-right: 150px;
+  
+  @media(max-width: 1620px) {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
 
-  // cellphone query
+    max-width: 70%;
+    margin-left: 15%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  } 
+
   @media(max-width: 425px) {
     top: 0;
 
@@ -55,20 +127,38 @@ export const ContentContainer = styled.div`
 export const TitleContainer = styled.div`
   display: flex;
   align-items: center;
-  
-  // cellphone query
-  @media(max-width: 425px) {
-    padding-top: 140px;
+
+  @media(max-width: 980px) {
+    flex-direction: column;
+    text-align: center;
   }
 `
 
 export const QRCode = styled.img`
-  width: 235px;
+  width: 23.5rem;
 
-  // cellphone query
-  @media(max-width: 425px) {
-    display: none;
+  @media(max-width: 1700px) {
+    width: 18.5rem;
   }
+
+  @media(max-width: 1620px) {
+    width: 30rem;
+  }
+`
+
+export const Logo = styled.img`
+  @media(max-width: 1700px) {
+    width: auto;
+  }
+
+  @media(max-width: 660px) {
+    width: 35rem;
+  } 
+
+  @media(max-width: 425px) {
+    width: 27rem;
+  }
+
 `
 
 export const Title = styled.h1`
@@ -77,17 +167,36 @@ export const Title = styled.h1`
 
   font-family: 'Montserrat';
   font-weight: 700;
-  font-size: 36px;
+  font-size: 3.6rem;
 
   margin-left: 34px;
   line-height: 1;
 
   color: ${props => props.theme.colors.white};
 
-  // cellphone query
-  @media(max-width: 425px) {
-    font-size: 22px;
+  @media(max-width: 1473px) {
+    font-size: 3rem;
+  }
+
+  @media(max-width: 980px) {
     margin: 0;
+    margin-top: 15px;
+  }
+
+  @media(max-width: 550px) {
+    font-size: 2.5rem;
+  }
+
+  @media(max-width: 460px) {
+    font-size: 2.3rem;
+  }
+
+  @media(max-width: 425px) {
+    font-size: 2.2rem;
+  }
+
+  @media(max-width: 365px) {
+    font-size: 1.85rem;
   }
 `
 
@@ -96,16 +205,24 @@ export const LightTitle = styled.h1`
 `
 
 export const Content = styled.p`
-  font-size: 20px;
+  font-size: 2rem;
   font-family: 'Inter';
   font-weight: 400;
 
   margin-top: 50px;
   max-width: 85%;
+  
+  @media(max-width: 1620px) {
+    text-align: center;
+  }
 
-  // cellphone query
+  @media(max-width: 620px) {
+    font-size: 1.8rem;
+    max-width: none;
+  }
+
   @media(max-width: 425px) {
-    font-size: 14px;
+    font-size: 1.4rem;
     margin-top: 35px;
     max-width: none;
   }
@@ -124,7 +241,7 @@ export const ImageMobile = styled.img`
     left: 0;
     right: 0;
 
-    width: 425px;
+    width: 100%;
   }
 `
 
@@ -159,7 +276,7 @@ export const Link = styled.a`
     color: ${props => props.theme.colors.black};
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
-    font-size: 22px;
+    font-size: 2.2rem;
     font-weight: 500;
   }
 `

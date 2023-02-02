@@ -1,0 +1,22 @@
+.itemNavigation {
+  color: #fff;
+  font-weight: 500;
+
+  outline: none;
+  text-decoration: none;
+
+  cursor: pointer;
+  transition: .3s;
+}
+
+.itemNavigation:hover {
+  color: #d1d1d1;
+}
+
+.glow {
+  color: #C9E483;
+}
+
+.glow:hover {
+  color: #9eac7d;
+}
