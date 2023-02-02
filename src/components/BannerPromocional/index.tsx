@@ -14,6 +14,7 @@ import {
   Link,
   Icon,
 } from './style'
+import './text.css'
 
 import imgDestaque from '../../utils/images/destaque-promocional.png'
 import imgDestaqueSecundaria from '../../utils/images/destaque-promocional-secundario.png'
@@ -63,7 +64,7 @@ export const BannerPromocional = () => {
           Nossa busca é alcançar o inicio e fim de um ciclo social, atuando com crianças e famílias em situação de risco e pessoas em situação de rua, no decorrer dos anos nossos projetos se ampliaram para hospitais, com a arte do palhaço e apoio a trabalhos no sertão nordestino e indígenas e ribeirinhos no estado do Amazonas.
         </Content>
 
-        <Content style={{ fontSize: 12 }}>
+        <Content className='text'>
           *direito de imagem cedido e reservado pela ONG CCAF
         </Content>
       </ContentContainer>
