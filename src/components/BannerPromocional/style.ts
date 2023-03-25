@@ -47,6 +47,10 @@ export const Container = styled.div`
     width: 100%;
     margin-top: 0px;
   }
+
+  @media(max-width: 285px) {
+    height: 85vh;
+  }
 `
 
 export const SecondContainer = styled.div`
@@ -90,8 +94,12 @@ export const SecondContainer = styled.div`
     height: 60vh;
   }
 
-  @media(max-width: 350px) {
-    height: 70vh;
+  @media(max-width: 425px) {
+    height: 75vh;
+  }
+
+  @media(max-width: 285px) {
+    height: 85vh;
   }
 `
 
@@ -271,6 +279,9 @@ export const Logo = styled.img`
     width: 27rem;
   }
 
+  @media(max-width: 285px) {
+    width: 24rem;
+  }
 `
 
 export const Title = styled.h1`
@@ -370,6 +381,10 @@ export const Content = styled.p`
     font-size: 1.4rem;
     margin-top: 35px;
     max-width: none;
+  }
+
+  @media(max-width: 285px) {
+    font-size: 1.2rem;
   }
 `
 
