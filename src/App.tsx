@@ -1,34 +1,53 @@
+import { useState, useEffect } from 'react'
+
 import GlobalStyle from './styles/global'
 import { ThemeProvider } from 'styled-components'
 import _default from './styles/themes/default'
 
-import { InitialBanner } from './components/InitialBanner'
-import { Sobre } from './components/Sobre'
-import { BannerPromocional } from './components/BannerPromocional'
-import { PedirUmaMusica } from './components/PedirUmaMusica'
-import { KarineOuriques } from './components/KarineOuriques'
-import { FervendoNaPG } from './components/FervendoNaPG'
-import { Depoimentos } from './components/Depoimentos'
-import { Parceiros } from './components/Parceiros'
-import { Footer } from './components/Footer'
-import { Alert } from './components/Alert'
+import {
+  InitialBanner,
+  Sobre,
+  BannerPromocional,
+  PedirUmaMusica,
+  KarineOuriques,
+  FervendoNaPG,
+  Depoimentos,
+  Parceiros,
+  Footer,
+  Alert,
+  Player,
+  Loader
+} from './components'
 
 export const App = () => {
-  // alert('Site em desenvolvimento!')
+  const [loading, setLoading] = useState<boolean>(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 5000);
+  }, [])
 
   return (
     <ThemeProvider theme={_default}>
       <GlobalStyle />
-      {/* <Alert /> */}
-      <InitialBanner />
-      <Sobre />
-      <BannerPromocional />
-      {/* <PedirUmaMusica /> */}
-      <KarineOuriques />
-      <FervendoNaPG />
-      {/* <Depoimentos /> */}
-      <Parceiros />
-      <Footer />
+
+      {loading ? (
+        <Loader />
+      ) : (
+        <>
+          {/* <Alert /> */}
+          <InitialBanner />
+          <Sobre />
+          <BannerPromocional />
+          {/* <PedirUmaMusica /> */}
+          <KarineOuriques />
+          <FervendoNaPG />
+          {/* <Depoimentos /> */}
+          <Parceiros />
+          <Footer />
+        </>
+      )}
     </ThemeProvider>
   )
 }

@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   width: 100%;
-  
+
   height: 500px;
 
   margin-top: 250px;
@@ -21,7 +21,7 @@ export const Container = styled.div`
   }
 
   @media(max-width: 860px) {
-    min-height: 60vh;
+    min-height: 95vh;
     padding: 50px 100px;
   }
 
@@ -29,7 +29,7 @@ export const Container = styled.div`
     min-height: 800px;
     flex-direction: column;
 
-    padding: 54px 72px;
+    padding: 54px 20px;
   }
 `
 
@@ -99,7 +99,7 @@ export const Extra = styled.div`
   display: flex;
   align-items: center;
   gap: 3.5rem;
-  
+
   @media(max-width: 860px) {
     justify-content: center;
     margin-top: 3.5rem;

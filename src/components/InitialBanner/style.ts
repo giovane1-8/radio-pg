@@ -100,11 +100,14 @@ export const Footer = styled.div`
   right: 0;
 
   width: 100%;
-  max-width: 18%;
+  max-width: 25%;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+
+  gap: 10px;
 
   margin-right: 10%;
   margin-bottom: 8rem;
@@ -125,7 +128,7 @@ export const Footer = styled.div`
 
     margin: 0;
     justify-content: center;
-    
+
     margin-bottom: 4rem;
     max-width: 100%;
     width: 100%;
@@ -138,7 +141,7 @@ export const Button = styled.button`
 
   border: 0;
   margin: 0 12px 0;
-  
+
   cursor: pointer;
 `
 
@@ -147,17 +150,17 @@ export const ButtonGlow = styled.button`
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  
+
   padding: 0.625rem;
   width: 20rem;
-  
+
   color: #FF4848;
   font-family: 'Inter', sans-serif;
   font-size: 1.5rem;
   font-weight: 700;
-  
+
   border-radius: 80px;
   border: 0;
-  
+
   cursor: pointer;
 `
