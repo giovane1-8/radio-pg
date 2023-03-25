@@ -20,9 +20,10 @@ import communication from '../../utils/icons/communication.svg'
 import pause from '../../utils/icons/pause.svg'
 import playOne from '../../utils/icons/play-one.svg'
 import backgroundVideo from '../../utils/videos/banner-background.mp4'
+import { Player } from '../Player'
 
 export const InitialBanner = () => {
-  const [inLive, IsInLive] = useState<boolean>(false)
+  const [inLive, IsInLive] = useState<boolean>(true)
 
   return (
     <Banner>
@@ -44,9 +45,14 @@ export const InitialBanner = () => {
           ) : (
             <ButtonGlow style={{ color: "#7C7A7F" }}><img src={broadcast} />OFFLINE</ButtonGlow>
           )}
-          <Button><img src={playOne} /></Button>
-          <Button><img src={pause} /></Button>
-          <Button><img src={communication} /></Button>
+
+          <Player
+            src='https://app.kshost.com.br/player-barra01/8888/true'
+            frameBorder='0'
+            scrolling="no"
+            width="231"
+            height="73"
+          />
         </Footer>
 
         <BackgroundVideo id="background-video" src={backgroundVideo} loop muted autoPlay>

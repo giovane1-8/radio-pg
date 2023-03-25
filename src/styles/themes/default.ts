@@ -4,7 +4,7 @@ export default {
     colors: {
     	primary: '#C9E483',
 			secondary: '#3C7B1E',
-	
+
 			white: '#FFFFFF',
 			lightGray: '#B3B0B8',
 			darkGray: '#7C7A7F',
