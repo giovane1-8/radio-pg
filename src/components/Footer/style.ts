@@ -5,7 +5,7 @@ export const Container = styled.div`
 
   height: 500px;
 
-  margin-top: 250px;
+  margin-top: 100px;
   padding: 100px 220px;
 
   display: flex;
@@ -68,6 +68,7 @@ export const DivIcon = styled.div`
 
 export const Icon = styled.img`
   margin-top: 25px;
+  object-fit: contain;
 
   @media(max-width: 860px) {
     width: 50px;

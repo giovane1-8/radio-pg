@@ -72,8 +72,7 @@ export const Parceiros = () => {
             <Footer>
               <Link target='_blank' href='https://www.instagram.com/versusimobiliaria/'><SocialMedia src={instagram} /></Link>
               <Link target='_blank' href='https://www.facebook.com/profile.php?id=100086509107010'><SocialMedia src={facebook} /></Link>
-              <Link target='_blank' href='https://www.youtube.com/@versusimobiliaria3366
-'><SocialMedia src={youtube} /></Link>
+              <Link target='_blank' href='https://www.youtube.com/@versusimobiliaria3366'><SocialMedia src={youtube} /></Link>
               <Link target='_blank' href='https://www.versusimobiliaria.com.br'><SocialMedia src={internet} /></Link>
             </Footer>
           </Content>

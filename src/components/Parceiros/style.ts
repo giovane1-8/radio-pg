@@ -144,5 +144,7 @@ export const Link = styled.a`
 `
 
 export const SocialMedia = styled.img`
-  width: 40px;
+  width: 50px;
+  aspect-ratio: 3/2;
+  object-fit: contain;
 `
