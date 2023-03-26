@@ -26,6 +26,10 @@ export const Container = styled.div`
     height: 45vh;
   }
 
+  @media(max-width: 1366px) {
+    margin-top: 15%;
+  }
+
   @media(max-width: 1050px) {
     height: 38vh;
   }
@@ -78,8 +82,8 @@ export const SecondContainer = styled.div`
     height: 50vh;
   }
 
-  @media(max-width: 1050px) {
-    height: 45vh;
+  @media(max-width: 1024px) {
+    height: 48vh;
   }
 
   @media(max-width: 940px) {
@@ -234,7 +238,7 @@ export const QRCode = styled.img`
     width: 18.5rem;
   }
 
-  @media(max-width: 1300px) {
+  @media(max-width: 1366px) {
     width: 15rem;
   }
 
@@ -259,7 +263,7 @@ export const Logo = styled.img`
     width: 45rem;
   }
 
-  @media(max-width: 1300px) {
+  @media(max-width: 1366px) {
     width: 35rem;
   }
 
@@ -305,7 +309,7 @@ export const Title = styled.h1`
     font-size: 2.7rem;
   }
 
-  @media(max-width: 1300px) {
+  @media(max-width: 1366px) {
     font-size: 2rem;
     margin-left: 15px;
   }
@@ -357,6 +361,10 @@ export const Content = styled.p`
   @media(max-width: 1500px) {
     width: 80%;
     font-size: 1.5rem;
+  }
+
+  @media(max-width: 1366px) {
+    font-size: 1.35rem;
   }
 
   @media(max-width: 1050px) {

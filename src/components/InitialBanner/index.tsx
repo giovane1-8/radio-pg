@@ -46,13 +46,7 @@ export const InitialBanner = () => {
             <ButtonGlow style={{ color: "#7C7A7F" }}><img src={broadcast} />OFFLINE</ButtonGlow>
           )}
 
-          <Player
-            src='https://app.kshost.com.br/player-barra01/8888/true'
-            frameBorder='0'
-            scrolling="no"
-            width="231"
-            height="73"
-          />
+          <iframe src="https://app.kshost.com.br/player-barra4/8888" frameBorder="0" width="50%" height="200" scrolling='no'></iframe>
         </Footer>
 
         <BackgroundVideo id="background-video" src={backgroundVideo} loop muted autoPlay>
