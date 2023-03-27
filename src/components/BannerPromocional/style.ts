@@ -35,7 +35,7 @@ export const Container = styled.div`
   }
 
   @media(max-width: 940px) {
-    height: 35vh;
+    /* height: 35vh; */
   }
 
   @media(max-width: 830px) {
@@ -47,13 +47,13 @@ export const Container = styled.div`
   }
 
   @media(max-width: 425px) {
-    height: 75vh;
+    height: 60vh;
     width: 100%;
     margin-top: 0px;
   }
 
   @media(max-width: 285px) {
-    height: 85vh;
+    height: 75vh;
   }
 `
 
@@ -64,46 +64,34 @@ export const SecondContainer = styled.div`
 
   min-width: 100%;
   margin-top: 0;
-  height: 80vh;
+  height: 95vh;
 
   position: relative;
 
   background-color: ${props => props.theme.colors.primary};
 
   @media(max-width: 1620px) {
-    height: 65vh;
-  }
-
-  @media(max-width: 1500px) {
-    height: 55vh;
+    height: 85vh;
   }
 
   @media(max-width: 1250px) {
-    height: 50vh;
-  }
-
-  @media(max-width: 1024px) {
-    height: 48vh;
-  }
-
-  @media(max-width: 940px) {
-    height: 35vh;
-  }
-
-  @media(max-width: 830px) {
-    height: 45vh;
-  }
-
-  @media(max-width: 600px) {
     height: 60vh;
   }
 
-  @media(max-width: 425px) {
-    height: 75vh;
+  @media(max-width: 940px) {
+    height: 60vh;
   }
 
-  @media(max-width: 285px) {
-    height: 85vh;
+  @media(max-width: 750px) {
+    height: 70vh;
+  }
+
+  @media(max-width: 600px) {
+    height: 80vh;
+  }
+
+  @media(max-width: 350px) {
+    height: 95vh;
   }
 `
 
@@ -136,9 +124,9 @@ export const Image = styled.img`
     margin-left: 5%;
   }
 
-  @media(max-width: 1050px) {
+  @media(max-width: 1024px) {
     width: 50rem;
-    margin-left: 5%;
+    /* margin-left: 5%; */
   }
 
   @media(max-width: 940px) {
@@ -160,6 +148,7 @@ export const Image2 = styled.img`
   @media(max-width: 1620px) {
     width: 650px;
     margin-left: 10%;
+    height: 100%;
   }
 
   @media(max-width: 1500px) {
@@ -188,6 +177,10 @@ export const ContentContainer = styled.div`
   position: absolute;
   right: 0;
   max-width: 45%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 3.5em;
 
   @media(max-width: 830px) {
     top: 0;
@@ -228,26 +221,6 @@ export const TitleContainer = styled.div`
     justify-content: center;
     align-items: center;
     flex-direction: column;
-  }
-`
-
-export const QRCode = styled.img`
-  width: 23.5rem;
-
-  @media(max-width: 1700px) {
-    width: 18.5rem;
-  }
-
-  @media(max-width: 1366px) {
-    width: 15rem;
-  }
-
-  @media(max-width: 980px) {
-    width: 12rem;
-  }
-
-  @media(max-width: 600px) {
-    width: 20rem
   }
 `
 
@@ -296,7 +269,6 @@ export const Title = styled.h1`
   font-weight: 700;
   font-size: 3.6rem;
 
-  margin-left: 34px;
   line-height: 1;
 
   color: ${props => props.theme.colors.white};
@@ -316,6 +288,11 @@ export const Title = styled.h1`
 
   @media(max-width: 980px) {
     font-size: 1.75rem
+  }
+
+  @media(max-width: 830px) {
+    align-items: center;
+    font-size: 2rem;
   }
 
   @media(max-width: 600px) {
@@ -349,13 +326,11 @@ export const Content = styled.p`
   font-family: 'Inter';
   font-weight: 400;
 
-  margin-top: 50px;
   max-width: 85%;
 
   @media(max-width: 1620px) {
     width: 70%;
     font-size: 1.75rem;
-    margin-top: 35px;
   }
 
   @media(max-width: 1500px) {
@@ -375,10 +350,6 @@ export const Content = styled.p`
     font-size: 1.2rem
   }
 
-  @media(max-width: 940px) {
-    margin-top: 20px;
-  }
-
   @media(max-width: 830px) {
     font-size: 1.5rem;
     text-align: center;
@@ -387,7 +358,6 @@ export const Content = styled.p`
 
   @media(max-width: 425px) {
     font-size: 1.4rem;
-    margin-top: 35px;
     max-width: none;
   }
 
@@ -396,65 +366,30 @@ export const Content = styled.p`
   }
 `
 
-// Exclusive mobile contents
-export const ImageMobile = styled.img`
-  display: none;
+export const DonateButton = styled.a`
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-  // cellphone query
-  @media(max-width: 425px) {
-    display: inherit;
+  width: 35%;
+  padding: 15px 0;
 
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
+  background-color: ${props => props.theme.colors.white};
+  border: 2px solid ${props => props.theme.colors.white};
+  border-radius: 80px;
 
-    width: 100%;
-  }
-`
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  color: ${props => props.theme.colors.secondary};
+  text-decoration: none;
 
-export const Link = styled.a`
-  display: none;
+  cursor: pointer;
+  outline: none;
+  transition: .3s;
 
-  // cellphone query
-  @media(max-width: 425px) {
-    display: inherit;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-
-    margin: 0;
-    margin: 50px;
-
-    width: 280px;
-    height: 70px;
-
-    border-radius: 33px;
-    background-color: ${props => props.theme.colors.white};
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-
-    outline: none;
-
-    color: ${props => props.theme.colors.black};
-    text-decoration: none;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 2.2rem;
-    font-weight: 500;
-  }
-`
-
-export const Icon = styled.img`
-  display: none;
-
-  // cellphone query
-  @media(max-width: 425px) {
-    display: inherit;
-    width: 35px;
+  @media(max-width: 830px) {
+    width: 80%;
   }
 `
