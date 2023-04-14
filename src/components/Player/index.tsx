@@ -8,17 +8,17 @@ export interface IPlayer extends IframeHTMLAttributes<HTMLIFrameElement> {
   height: string
 }
 
-import { IFrame } from './style';
+import * as Atom from './style';
 
 export const Player: FC<IPlayer> = ({ src, frameBorder, scrolling, width, height }) => {
   return (
-    <IFrame
+    <Atom.IFrame
       src={src}
       frameBorder={frameBorder}
       scrolling={scrolling}
       width={width}
       height={height}
     >
-    </IFrame>
+    </Atom.IFrame>
   )
 }

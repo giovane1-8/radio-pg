@@ -1,11 +1,4 @@
-import {
-  Container,
-  Title,
-  Grid,
-  Cell,
-  Background,
-  SubTitle
-} from './style'
+import * as Atom from './style'
 
 import destaque1 from '../../utils/images/destaque1.png'
 import destaque2 from '../../utils/images/destaque2.png'
@@ -37,18 +30,18 @@ export const FervendoNaPG = () => {
 
 
   return (
-    <Container id='news'>
-      <Title>Fervendo na Praia Grande</Title>
-      <Grid>
+    <Atom.Container id='news'>
+      <Atom.Title>Fervendo na Praia Grande</Atom.Title>
+      <Atom.Grid>
         {data.map((item, index) => {
           return (
-            <Cell key={index} target='_blank' href={item.nm_link}>
-              <Background src={"data:image/png;base64, " + item.imagem} />
-              <SubTitle>{item.nm_titulo}</SubTitle>
-            </Cell>
+            <Atom.Cell key={index} target='_blank' href={item.nm_link}>
+              <Atom.Background src={"data:image/png;base64, " + item.imagem} />
+              <Atom.SubTitle>{item.nm_titulo}</Atom.SubTitle>
+            </Atom.Cell>
           )
         })}
-      </Grid>
-    </Container>
+      </Atom.Grid>
+    </Atom.Container>
   )
 }
