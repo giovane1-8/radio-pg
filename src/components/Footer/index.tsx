@@ -1,17 +1,4 @@
-import {
-  Container,
-  Details,
-  Links,
-  Ul,
-  DivIcon,
-  Icon,
-  Title,
-  SubTitle,
-  Code,
-  Extra,
-  Language,
-  P
-} from './style'
+import * as Atom from './style'
 
 import qrCode from '../../utils/images/footer-qrcode.png'
 import instagram from '../../utils/icons/instagram-green.svg'
@@ -20,36 +7,36 @@ import heart from '../../utils/icons/heart.svg'
 
 export default function Footer() {
   return (
-    <Container>
-      <Details>
-        <Links>
+    <Atom.Container>
+      <Atom.Details>
+        <Atom.Links>
           {/* <Ul>
             <li>Quem somos</li>
             <li>Perguntas frequentes</li>
             <li>Contato</li>
           </Ul> */}
 
-          <DivIcon>
-            <Icon src={facebook} />
-            <Icon src={instagram} />
-            <Icon src={heart} />
-          </DivIcon>
-        </Links>
+          <Atom.DivIcon>
+            <Atom.Icon src={facebook} />
+            <Atom.Icon src={instagram} />
+            <Atom.Icon src={heart} />
+          </Atom.DivIcon>
+        </Atom.Links>
 
         <div>
-          <Title>Parceiros</Title>
-          <SubTitle>Versus Imobiliária</SubTitle>
-          <SubTitle>Karine Ouriques</SubTitle>
-          <SubTitle>LinkerWeb</SubTitle>
+          <Atom.Title>Parceiros</Atom.Title>
+          <Atom.SubTitle>Versus Imobiliária</Atom.SubTitle>
+          <Atom.SubTitle>Karine Ouriques</Atom.SubTitle>
+          <Atom.SubTitle>LinkerWeb</Atom.SubTitle>
         </div>
 
-        <Code src={qrCode} alt="qr code" />
-      </Details>
+        <Atom.Code src={qrCode} alt="qr code" />
+      </Atom.Details>
 
-      <Extra>
-        <Language>Português</Language>
-        <P>Radio PG - Todos os direitos reservados</P>
-      </Extra>
-    </Container>
+      <Atom.Extra>
+        <Atom.Language>Português</Atom.Language>
+        <Atom.P>Radio PG - Todos os direitos reservados</Atom.P>
+      </Atom.Extra>
+    </Atom.Container>
   )
 }

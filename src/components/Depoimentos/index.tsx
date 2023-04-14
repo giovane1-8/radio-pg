@@ -1,15 +1,6 @@
 import { useState, useEffect, useRef } from 'react'
 
-import {
-  Main,
-  Carousel,
-  Inner,
-  Card,
-  Name,
-  Locale,
-  Title,
-  Content,
-} from './style'
+import * as Atom from './style'
 
 type Carousel = {
   name: string,
@@ -60,23 +51,23 @@ export default function Depoimentos() {
   }, [])
 
   return (
-    <Main>
-      <Carousel ref={carouselDiv} whileTap={{ cursor: 'grabbing' }}>
-        <Inner
+    <Atom.Main>
+      <Atom.Carousel ref={carouselDiv} whileTap={{ cursor: 'grabbing' }}>
+        <Atom.Inner
           drag="x" dragConstraints={{ right: 0, left: -width }}
         >
           {data.map((item, index) => {
             return (
-              <Card key={index}>
-                <Name>{item.name}</Name>
-                <Locale>{item.state} - {item.city}</Locale>
-                <Title>{item.title}</Title>
-                <Content>{item.content}</Content>
-              </Card>
+              <Atom.Card key={index}>
+                <Atom.Name>{item.name}</Atom.Name>
+                <Atom.Locale>{item.state} - {item.city}</Atom.Locale>
+                <Atom.Title>{item.title}</Atom.Title>
+                <Atom.Content>{item.content}</Atom.Content>
+              </Atom.Card>
             )
           })}
-        </Inner>
-      </Carousel>
-    </Main>
+        </Atom.Inner>
+      </Atom.Carousel>
+    </Atom.Main>
   )
 }

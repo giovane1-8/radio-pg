@@ -38,7 +38,7 @@ export const App = () => {
         <BannerPromocional />
         {/* <PedirUmaMusica /> */}
         <KarineOuriques />
-        <FervendoNaPG />
+        {/* <FervendoNaPG /> */}
         {/* <Depoimentos /> */}
         <Parceiros />
         <Footer />
