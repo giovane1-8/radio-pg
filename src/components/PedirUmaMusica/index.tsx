@@ -16,8 +16,7 @@ import { useState } from 'react'
 import { apiAxios } from '../../Axios'
 
 
-export const PedirUmaMusica = () => {
-
+export default function PedirUmaMusica() {
   const [name, setName] = useState("")
   const [state, setState] = useState("")
   const [city, setCity] = useState("")

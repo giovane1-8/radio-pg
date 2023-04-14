@@ -17,7 +17,7 @@ import imgDestaque from '../../utils/images/destaque-promocional.png'
 import imgDestaqueSecundaria from '../../utils/images/destaque-promocional-secundario.png'
 import ccafLogo from '../../utils/images/ccaf-logo.png'
 
-export const BannerPromocional = () => {
+export default function BannerPromocional() {
   return (
     <>
       <Container id='donations'>

@@ -18,7 +18,7 @@ import instagram from '../../utils/icons/instagram-green.svg'
 import facebook from '../../utils/icons/facebook-green.svg'
 import heart from '../../utils/icons/heart.svg'
 
-export const Footer = () => {
+export default function Footer() {
   return (
     <Container>
       <Details>

@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, Suspense } from 'react'
 
 import GlobalStyle from './styles/global'
 import { ThemeProvider } from 'styled-components'
@@ -31,23 +31,18 @@ export const App = () => {
   return (
     <ThemeProvider theme={_default}>
       <GlobalStyle />
-
-      {loading ? (
-        <Loader />
-      ) : (
-        <>
-          {/* <Alert /> */}
-          <InitialBanner />
-          <Sobre />
-          <BannerPromocional />
-          {/* <PedirUmaMusica /> */}
-          <KarineOuriques />
-          <FervendoNaPG />
-          {/* <Depoimentos /> */}
-          <Parceiros />
-          <Footer />
-        </>
-      )}
+      <Suspense fallback={<Loader></Loader>}>
+        {/* <Alert /> */}
+        <InitialBanner />
+        <Sobre />
+        <BannerPromocional />
+        {/* <PedirUmaMusica /> */}
+        <KarineOuriques />
+        <FervendoNaPG />
+        {/* <Depoimentos /> */}
+        <Parceiros />
+        <Footer />
+      </Suspense>
     </ThemeProvider>
   )
 }

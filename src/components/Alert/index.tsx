@@ -16,7 +16,7 @@ import {
 import close from '../../utils/icons/plus.svg'
 import sol from '../../utils/icons/sol.svg'
 
-export const Alert = () => {
+export default function Alert() {
   const alert: any = useRef();
   const [closed, setClosed] = useState<Boolean>(false)
 

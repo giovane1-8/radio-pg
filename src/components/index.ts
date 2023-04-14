@@ -1,15 +1,19 @@
-import { InitialBanner } from './InitialBanner'
-import { Sobre } from './Sobre'
-import { BannerPromocional } from './BannerPromocional'
-import { PedirUmaMusica } from './PedirUmaMusica'
-import { KarineOuriques } from './KarineOuriques'
-import { FervendoNaPG } from './FervendoNaPG'
-import { Depoimentos } from './Depoimentos'
-import { Parceiros } from './Parceiros'
-import { Footer } from './Footer'
-import { Alert } from './Alert'
+import { lazy } from 'react'
+
+const InitialBanner = lazy(() => import('./InitialBanner'))
+const Sobre = lazy(() => import('./Sobre'))
+const BannerPromocional = lazy(() => import('./BannerPromocional'))
+const PedirUmaMusica = lazy(() => import('./PedirUmaMusica'))
+const KarineOuriques = lazy(() => import('./KarineOuriques'))
+const FervendoNaPG = lazy(() => import('./FervendoNaPG'))
+const Depoimentos = lazy(() => import('./Depoimentos'))
+const Parceiros = lazy(() => import('./Parceiros'))
+const Footer = lazy(() => import('./Footer'))
+const Alert = lazy(() => import('./Alert'))
+// const Player = lazy(() => import('./Player'))
+const Loader = lazy(() => import('./Loader'))
+
 import { Player } from './Player'
-import { Loader } from './Loader'
 
 export {
   InitialBanner,
