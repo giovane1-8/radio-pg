@@ -43,7 +43,7 @@ export const FervendoNaPG = () => {
         {data.map((item, index) => {
           return (
             <Cell key={index} target='_blank' href={item.nm_link}>
-              <Background src={"data:image/png;base64, "+item.imagem} />
+              <Background src={"data:image/png;base64, " + item.imagem} />
               <SubTitle>{item.nm_titulo}</SubTitle>
             </Cell>
           )
