@@ -19,7 +19,7 @@ type Carousel = {
   content: string,
 }
 
-export const Depoimentos = () => {
+export default function Depoimentos() {
   const data: Carousel[] = [
     {
       name: 'Maria Célia',

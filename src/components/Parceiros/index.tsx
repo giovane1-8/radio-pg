@@ -35,7 +35,7 @@ import internet from '../../utils/icons/internet.svg'
 import instagram from '../../utils/icons/instagram.svg'
 import facebook from '../../utils/icons/facebook.svg'
 
-export const Parceiros = () => {
+export default function Parceiros() {
   return (
     <Container id='partners'>
       <Title><Icon src={success} />Nossos apoiadores</Title>

@@ -11,7 +11,7 @@ import {
 import deck from '../../utils/icons/deck.svg'
 import karine from '../../utils/images/karineouriques.png'
 
-export const KarineOuriques = () => {
+export default function KarineOuriques() {
   return (
     <Center>
       <Container>

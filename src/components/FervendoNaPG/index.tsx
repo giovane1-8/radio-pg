@@ -20,7 +20,7 @@ type CardProps = {
   link: string
 }
 
-export const FervendoNaPG = () => {
+export default function FervendoNaPG() {
   const data: CardProps[] = [
     {
       title: 'Moradores de prédio que sofreu dano estrutural em Praia Grande já têm data para retornar ao imóvel',

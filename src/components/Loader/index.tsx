@@ -2,7 +2,7 @@ import React from "react"
 
 import './style.css'
 
-export const Loader = () => {
+export default function Loader() {
   return (
     <div className="center">
       <div id="container">

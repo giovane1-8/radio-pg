@@ -22,7 +22,7 @@ import playOne from '../../utils/icons/play-one.svg'
 import backgroundVideo from '../../utils/videos/banner-background.mp4'
 import { Player } from '../Player'
 
-export const InitialBanner = () => {
+export default function InitialBanner() {
   const [inLive, IsInLive] = useState<boolean>(true)
 
   return (
